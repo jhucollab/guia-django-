@@ -1,11 +1,5 @@
-# Creado por https://www.toptal.com/developers/gitignore/api/python,cvs,django
-# Editar en https://www.toptal.com/developers/gitignore?templates=python,cvs,django
-
-### CVS ###
-/CVS/*
-**/CVS/*
-.cvsignore
-*/.cvsignore
+# Creado por https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,django
+# Editar en https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,django
 
 ### Django ###
 *.registro
@@ -45,7 +39,7 @@ var/
 ruedas/
 compartir/python-wheels/
 *.egg-info/
-.instalado.cfg
+.installed.cfg
 *.huevo
 MANIFIESTO
 
@@ -131,7 +125,7 @@ ipython_config.py
 __pypackages__/
 
 # Cosas de apio
-horario de celerybeat
+Horario de celerybeat
 celerybeat.pid
 
 # Archivos analizados por SageMath
@@ -269,4 +263,23 @@ poesía.toml
 # Archivos de configuración LSP
 pyrightconfig.json
 
-# Fin de https://www.toptal.com/developers/gitignore/api/python,cvs,django
+### Código de VisualStudio ###
+.vscode/*
+!.vscode/configuraciones.json
+!.vscode/tareas.json
+!.vscode/launch.json
+!.vscode/extensiones.json
+!.vscode/*.fragmentos-de-código
+
+# Historial local para Visual Studio Code
+.historia/
+
+# Extensiones de Visual Studio Code creadas
+*.vsix
+
+### Parche de VisualStudioCode ###
+# Ignorar todo el historial local de archivos
+.historia
+.ionuro
+
+# Fin de https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,django
