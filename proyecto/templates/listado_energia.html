@@ -1,0 +1,8 @@
+<h1>Listado energias</h1>
+<ul>
+ {% for energia in energias %}
+  <li>{{energia}}</li>
+  {% empty %}
+  <li> no energias registradas </li>
+  {% endfor %}
+</ul>

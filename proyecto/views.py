@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .models import Energia
+from .models import Energia, Particula
 #listado energia
 def listado_energia(request):
-    Energia = Energia.objects.all()
-    return render(request, "listado_enegia.html", {"energias:", Energia})
+    energias = Energia.objects.all()
+    return render(request, "listado_energia.html", {"energias": energias})
 #listado particula
 def listado_particulas(request):
-    Particula = Particula.objects.all()
-    return render(request, "listado_particula.html", {"particulas:", Particula})
+    particulas = Particula.objects.all()
+    return render(request, "listado_particula.html", {"particulas": particulas})
 
 # Create your views here.

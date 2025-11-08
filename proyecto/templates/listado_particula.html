@@ -1,0 +1,8 @@
+<h1>Listado particulas</h1>
+<ul>
+ {% for particula in particulas %}
+  <li>{{particula}}</li>
+  {% empty %}
+  <li> no particulas registradas</li>
+  {% endfor %}
+</ul>
