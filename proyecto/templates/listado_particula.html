@@ -6,22 +6,3 @@
   <li> no particulas registradas</li>
   {% endfor %}
 </ul>
-{% extends 'base.html' %}
-
-{% block title %}Listado de Partículas{% endblock %}
-
-{% block content %}
-<h2>Listado de Partículas</h2>
-
-<form method="get" class="mb-3">
-    <input type="text" name="q" class="form-control" placeholder="Buscar por nombre..." value="{{ request.GET.q }}">
-</form>
-
-<ul class="list-group">
-    {% for particula in particulas %}
-        <li class="list-group-item">{{ particula.nombre }} - {{ particula.tipo }}</li>
-    {% empty %}
-        <li class="list-group-item">No se encontraron resultados.</li>
-    {% endfor %}
-</ul>
-{% endblock %}
