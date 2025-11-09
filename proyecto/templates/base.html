@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Proyecto jhu{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Proyecto jhu 🌀</h1>
+        <nav>
+            <a href="{% url 'listado_energia' %}">Energías</a> |
+            <a href="{% url 'listado_particula' %}">Partículas</a> |
+            <a href="{% url 'crear_energia' %}">Nueva Energía</a> |
+            <a href="{% url 'crear_particula' %}">Nueva Partícula</a>
+        </nav>
+        <hr>
+    </header>
+
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,6 +1,12 @@
-<h1>Agregar Energía</h1>
+{% extends 'base.html' %}
+{% block content %}
+<h1>Agregar Energia</h1>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Guardar</button>
 </form>
+<h1>Agregar Energia</h1>
+<table>...</table>
+
+{% endblock %}
